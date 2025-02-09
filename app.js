@@ -1,6 +1,14 @@
 
 let listaAmigos = [];
 
-function adicionarAmigos(nome) {
-    
+
+
+function adicionarAmigo() {
+    let nomeAdicionado = document.querySelector("#amigo").value;
+    if (nomeAdicionado == "") {
+        alert("Por favor, insira um nome válido.")
+    }
+    console.log(nomeAdicionado);
 }
+
+
