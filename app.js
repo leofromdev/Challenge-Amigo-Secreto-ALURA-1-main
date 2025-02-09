@@ -8,7 +8,18 @@ function adicionarAmigo() {
     if (nomeAdicionado == "") {
         alert("Por favor, insira um nome válido.")
     }
-    console.log(nomeAdicionado);
+    else {
+        listaAmigos.push(nomeAdicionado);
+        console.log("Nome adicionado: " + nomeAdicionado);
+        console.log("Lista: " + listaAmigos);
+        nomeAdicionado.value = "";
+        limparCampo();
+    }
+    
 }
 
+function limparCampo() {
+    nomeAdicionado = document.querySelector("#amigo");
+    nomeAdicionado.value = "";
+}
 
