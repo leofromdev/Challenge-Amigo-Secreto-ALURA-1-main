@@ -43,5 +43,3 @@ function sortearAmigo() {
         lista.innerHTML = nomeSorteado;
     }
 }
-
-
