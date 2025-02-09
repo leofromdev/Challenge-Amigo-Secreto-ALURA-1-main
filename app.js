@@ -27,3 +27,21 @@ function limparCampo() {
     nomeAdicionado = document.querySelector("#amigo");
     nomeAdicionado.value = "";
 }
+
+titulo = document.querySelector(".main-title");
+
+function sortearAmigo() {
+    if (listaAmigos == "") {
+        alert("Por favor, insira nomes.")
+    } else {
+        let tamanhoLista = listaAmigos.length;
+        let nomeAleatorio = Math.floor(Math.random() *tamanhoLista);
+        let nomeSorteado = listaAmigos[nomeAleatorio];
+        titulo.innerHTML = "O amigo sorteado foi:" +nomeSorteado + "!";
+        listaAmigos = [nomeSorteado]
+        let lista = document.querySelector("#listaAmigos");
+        lista.innerHTML = nomeSorteado;
+    }
+}
+
+
